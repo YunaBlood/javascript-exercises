@@ -1,35 +1,40 @@
 const add = function (number, secondNumber) {
-  addNumber = number + secondNumber;
-  return addNumber;
+  return number + secondNumber;
+  // addNumber = number + secondNumber;
+  // return addNumber;
 };
 
 const subtract = function (number, secondNumber) {
-  subNumber = number - secondNumber;
-  return subNumber;
+  return number - secondNumber;
+  // subNumber = number - secondNumber;
+  // return subNumber;
 };
 
 const sum = function (number) {
-  result = 0;
-  for (let i = 0; i < number.length; i++) {
-    result += number[i];
-  }
-  return result;
+  return number.reduce((total, current) => total + current, 0);
+  // result = 0;
+  // for (let i = 0; i < number.length; i++) {
+  //   result += number[i];
+  // }
+  // return result;
 };
 
 const multiply = function (number) {
-  result = 1;
-  for (let i = 0; i < number.length; i++) {
-    result *= number[i];
-  }
-  return result;
+  return number.reduce((total, multi) => total * multi, 1);
+  // result = 1;
+  // for (let i = 0; i < number.length; i++) {
+  //   result *= number[i];
+  // }
+  // return result;
 };
 
 const power = function (number, secondNumber) {
-  result = 1;
-  for (let i = 0; i < secondNumber; i++) {
-    result *= number;
-  }
-  return result;
+  return Math.pow(number, secondNumber);
+  // result = 1;
+  // for (let i = 0; i < secondNumber; i++) {
+  //   result *= number;
+  // }
+  // return result;
 };
 
 const factorial = function (number) {
